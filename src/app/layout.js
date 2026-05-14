@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "TIRE HOUSE | Premium Auto Parts",
   description: "Shop premium Rims, Wheels, Suspension kits, Exhaust systems, and Roof racks.",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {

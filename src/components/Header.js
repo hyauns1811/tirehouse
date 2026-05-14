@@ -12,8 +12,8 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-content">
-        <Link href="/" className="logo">
-          TIRE<span>HOUSE</span>
+        <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="/logo.png" alt="Tire House Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain' }} />
         </Link>
         <nav className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '30px' }}>
           <Link href="/">Home</Link>
