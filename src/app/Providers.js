@@ -5,8 +5,7 @@ import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 export function Providers({ children }) {
   const initialOptions = {
-    // Replace with actual PayPal Client ID when ready
-    "client-id": "test", 
+    "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "test", 
     currency: "USD",
     intent: "capture",
   };
